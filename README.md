@@ -15,9 +15,11 @@ This repo has two Ruby projects.
 
 Add spec/secrets.yml for both the projects with following content:
 
+```sh
  aws_access_key_id: <YOUR ACCESS KEY ID GOES HERE>
  aws_secret_access_key: <YOUR SECRET ACCESS KEY GOES HERE>
  region: <ANY REGION GOES HERE>
+```
 
 
 > gem install bundler
