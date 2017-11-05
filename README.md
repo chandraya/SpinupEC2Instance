@@ -10,12 +10,15 @@ This repo has two Ruby projects.
 2. testec2 - It tests if EC2 resources are created using awspec.
 
 
-### How to run tests #####
-
-> bundle exec rake spec
-
-
 ### Dependencies and how to get started ####
+
+
+Add spec/secrets.yml for both the projects with following content:
+
+ aws_access_key_id: <YOUR ACCESS KEY ID GOES HERE>
+ aws_secret_access_key: <YOUR SECRET ACCESS KEY GOES HERE>
+ region: <ANY REGION GOES HERE>
+
 
 > gem install bundler
  
@@ -24,3 +27,19 @@ This repo has two Ruby projects.
 > bundle exec rake spec
 
 And, Ruby executable, of course!
+
+
+### How to run tests #####
+
+Run the following from ec2spinner or testec2 project home folder:
+
+> bundle exec rake spec
+
+
+### Single command to launch environment #####
+
+Assuming all dependencies are installed and secrets.yml file is added, run the following from ec2spinner project home folder:
+
+> ruby -r "./lib/ec2spinner.rb" -e "Ec2spinner.spinup"
+
+
