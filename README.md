@@ -7,7 +7,7 @@ This repo has two Ruby projects.
 
 1. ec2spinner - It creates an EC2 instance with a web server. Tested using rspec for home page response.
 
-2. testec2 - It tests if EC2 resources are created using awspec.
+2. testec2 - It uses awspec to test if EC2 resources are created.
 
 
 ### Dependencies and how to get started ####
