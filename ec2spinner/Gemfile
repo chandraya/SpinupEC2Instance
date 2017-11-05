@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'rspec'
+gem 'aws-sdk-ec2'
+gem 'eat'
