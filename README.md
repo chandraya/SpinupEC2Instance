@@ -18,7 +18,9 @@ This repo has two Ruby projects.
 ### Dependencies and how to get started ####
 
 > gem install bundler
+ 
 > bundle install
+ 
 > bundle exec rake spec
 
 And, Ruby executable, of course!
