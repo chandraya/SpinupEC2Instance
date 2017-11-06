@@ -45,3 +45,28 @@ Assuming all dependencies are installed and secrets.yml file is added, run the f
 > ruby -r "./lib/ec2spinner.rb" -e "Ec2spinner.spinup"
 
 
+### Test Run #####
+
+```sh
+> bundle exec rake spec
+```
+
+
+```sh
+C:/Ruby24-x64/bin/ruby.exe -I'C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.7.0/lib';'C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-support-3.7.0/lib' 'C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.7.0/exe/rspec' --pattern 'spec/**{,/*/**}/*_spec.rb'
+Created VPC. VPC_ID==>vpc-78bcaf11
+Created Internet Gateway. IGW_ID==>igw-cbf7bea2
+Create subnet. SUBNET_ID==>subnet-a5ddbce8
+Created Route table. table.id==>rtb-adef13c5
+Created Security Group. SECURITY_GROUP_ID==>sg-162c5f7e
+A key pair named 'my-key-pair' already exists.
+Created instance named 'MyInstance'. Waiting until public DNS is available...
+Your new Web Server home page is: http://13.58.84.246/index.html
+Your new Web Server home page (http://13.58.84.246/index.html) returns: To infiniti and beyond!
+
+EC2 web server home page response
+  should return: To infiniti and beyond!
+
+Finished in 0 seconds (files took 1 minute 20.77 seconds to load)
+1 example, 0 failures
+```
